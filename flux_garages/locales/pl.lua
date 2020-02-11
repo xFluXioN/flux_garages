@@ -1,0 +1,38 @@
+Locales['pl'] = {
+	['store_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~g~SCHOWAĆ~w~ ten samochód",
+	['release_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~OTWORZYĆ~w~ swój garaż",
+	['impound_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~ODHOLOWAĆ~w~ pojazd",
+	['p_impound_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~ZWRÓCIĆ~w~ pojazd",
+	['subowner_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~NADAĆ~w~ współwłaściciela",
+	
+	['veh_released'] = "Pojazd ~g~ wyciągnięty",
+	['veh_stored'] = "Pojazd ~g~schowany",
+	['repair'] = "~r~Pojazd musi być naprawiony!",
+	
+	['max_subs'] = "~r~Osiągnięto maksymalną ilość współwłaścicieli dla tego pojazdu",
+	['sub_added'] = "~g~Dodano nowego współwłaściciela",
+	['you_are_sub'] = "~g~Zostałeś współwłaścicielem pojazdu o numerach rejestracyjnych %s",
+	['not_owner'] = "~r~Nie jesteś właścicielem tego pojazdu",
+	['not_veh'] = "~r~Nie jesteś właścicielem tego pojazdu lub taki pojazd nie istnieje",
+	['sub_deleted'] = "~g~Usunięto współwłaściciela",
+	['checking_veh'] = "Trwa poszukiwanie pojazdu...",
+	['veh_impounded'] = "Odholowałeś pojazd o numerze rejestracyjnym ~g~%s",
+	['no_money'] = "~r~Nie stać Cię na odholowanie tego pojazdu",
+	['cant_impound'] = "~r~Nie możesz odholować tego pojazdu",
+	['no_veh'] = "~r~Taki numer rejestracyjny nie istnieje!",
+	['set_sub'] = "Nadaj współwłaściciela",
+	['manage_sub'] = "Zarządzaj współwłaścicielami",
+	['no_players'] = "~r~Brak osób w pobliżu",
+	['deleting_sub'] = "Usuwanie współwłaściciela - %s",
+	['sure_delete'] = "Czy na pewno chcesz usunąć współwłaściciela?",
+	['no'] = "Nie",
+	['yes'] = "Tak",
+	['no_subs'] = "~r~Brak współwłaścicieli dla tego pojazdu",
+	['vehs_out'] = "Pojazdy poza garażem",
+	['police_impound'] = "Parking policyjny",
+	['veh_reg'] = "Vehicle plate",
+	['owner_menu'] = "Menu właściciela - %s",
+	
+	['garage_blip'] = "Garaż",
+	['impound_blip'] = "Odholowywanie pojazdów"
+}
