@@ -1,7 +1,7 @@
 Locales['pl'] = {
 	['store_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~g~SCHOWAĆ~w~ ten samochód",
 	['release_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~OTWORZYĆ~w~ swój garaż",
-	['impound_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~ODHOLOWAĆ~w~ pojazd",
+	['tow_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~ODHOLOWAĆ~w~ pojazd",
 	['p_impound_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~ZWRÓCIĆ~w~ pojazd",
 	['subowner_veh'] = "Naciśnij ~INPUT_CONTEXT~, aby ~b~NADAĆ~w~ współwłaściciela",
 	
