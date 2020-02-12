@@ -300,25 +300,23 @@ Citizen.CreateThread(function ()
 			if IsControlPressed(0, 38) and (GetGameTimer() - GUI.Time) > 300 then
 				if CurrentAction == 'park_car' then
 					local playerPed = GetPlayerPed(-1)
-					for i=1, #Config.Garages, 1 do
-						local vehicle       = GetVehiclePedIsIn(playerPed)
-						local vehicleProps  = ESX.Game.GetVehicleProperties(vehicle)
-						local name          = GetDisplayNameFromVehicleModel(vehicleProps.model)
-						local plate         = vehicleProps.plate
-						local health		= GetVehicleEngineHealth(vehicle)
-						if health > Config.MinimumHealth then
-							ESX.TriggerServerCallback('flux_garages:checkIfVehicleIsOwned', function (owned)
-								if owned ~= nil then                    
-									TriggerServerEvent("flux_garages:updateOwnedVehicle", vehicleProps)
-									TaskLeaveVehicle(playerPed, vehicle, 16)
-									ESX.Game.DeleteVehicle(vehicle)
-								else
-									ESX.ShowNotification(_U('not_owner'))
-								end
-							end, vehicleProps.plate)
-						else
-							ESX.ShowNotification(_U('repair'))
-						end
+					local vehicle       = GetVehiclePedIsIn(playerPed)
+					local vehicleProps  = ESX.Game.GetVehicleProperties(vehicle)
+					local name          = GetDisplayNameFromVehicleModel(vehicleProps.model)
+					local plate         = vehicleProps.plate
+					local health		= GetVehicleEngineHealth(vehicle)
+					if health > Config.MinimumHealth then
+						ESX.TriggerServerCallback('flux_garages:checkIfVehicleIsOwned', function (owned)
+							if owned ~= nil then                    
+								TriggerServerEvent("flux_garages:updateOwnedVehicle", vehicleProps)
+								TaskLeaveVehicle(playerPed, vehicle, 16)
+								ESX.Game.DeleteVehicle(vehicle)
+							else
+								ESX.ShowNotification(_U('not_owner'))
+							end
+						end, vehicleProps.plate)
+					else
+						ESX.ShowNotification(_U('repair'))
 					end
 				elseif CurrentAction == 'pullout_car' then
 					SendNUIMessage({
